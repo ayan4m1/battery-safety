@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'LiPo Safety',
     description: 'The LiPo safety resource',
-    author: 'ayan4m1'
+    author: '@ayan4m1'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -30,6 +30,8 @@ module.exports = {
       }
     },
     'gatsby-plugin-offline',
-    'gatsby-plugin-sass'
+    'gatsby-plugin-sass',
+    'gatsby-transformer-remark',
+    'gatsby-plugin-eslint'
   ]
 };
