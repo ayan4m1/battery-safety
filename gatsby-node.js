@@ -38,7 +38,8 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     resolve: {
       alias: {
         '~components': resolve(__dirname, 'src/components'),
-        '~pages': resolve(__dirname, 'src/pages')
+        '~pages': resolve(__dirname, 'src/pages'),
+        '~images': resolve(__dirname, 'src/images')
       }
     }
   });
