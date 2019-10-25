@@ -32,6 +32,14 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-sass',
     'gatsby-transformer-remark',
-    'gatsby-plugin-eslint'
+    'gatsby-plugin-eslint',
+    {
+      resolve: 'gatsby-plugin-gtag',
+      options: {
+        trackingId: 'UA-138430995-2',
+        head: true,
+        anonymize: true
+      }
+    }
   ]
 };
