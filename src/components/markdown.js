@@ -23,9 +23,6 @@ export default class Markdown extends Component {
         <SEO title={title} />
         <Container>
           <Row>
-            <Col md="12">
-              <h1>{title}</h1>
-            </Col>
             <Col md="12" dangerouslySetInnerHTML={{ __html: html }} />
           </Row>
         </Container>
