@@ -2,15 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql, Link } from 'gatsby';
 
-import '../index.scss';
-
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import SEO from '~components/seo';
+import Layout from '~components/layout';
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Recent tests</h1>
+    <h1>LiPo Tests</h1>
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <div key={node.frontmatter.path}>
         <Link to={node.frontmatter.path}>
