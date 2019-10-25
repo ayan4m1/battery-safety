@@ -33,6 +33,7 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-transformer-remark',
     'gatsby-plugin-eslint',
+    'gatsby-plugin-mdx',
     {
       resolve: 'gatsby-plugin-gtag',
       options: {
