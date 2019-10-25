@@ -1,42 +1,31 @@
-import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
 import React from 'react';
+import { Link } from 'gatsby';
+import { Navbar, Nav } from 'react-bootstrap';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+import vwLogo from '~images/logo.svg';
+
+const Header = () => (
+  <Navbar>
+    <Navbar.Brand>
+      <Link to="/">
+        <img src={vwLogo} alt="Vapor Wilco" />
+      </Link>
+    </Navbar.Brand>
+    <Navbar.Toggle />
+    <Navbar.Collapse>
+      <Nav>
+        <Nav.Link as={Link} to="/recent" activeLinkKey="/">
+          Recent Tests
+        </Nav.Link>
+        <Nav.Link as={Link} to="/all" activeLinkKey="/">
+          All Tests
+        </Nav.Link>
+        <Nav.Link as={Link} to="/donate">
+          Donate
+        </Nav.Link>
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>
 );
-
-Header.propTypes = {
-  siteTitle: PropTypes.string
-};
-
-Header.defaultProps = {
-  siteTitle: ``
-};
 
 export default Header;
