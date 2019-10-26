@@ -43,7 +43,7 @@ From the manufacturer: ![battery](http://www.store.revolectrix.com/B420-1550L.jp
 
 ### Test Results
 
-![test](https://i.imgur.com/1zx3OAr.png)
+![test](./src/images/tests/revolectrix-3s-1550.png)
 
 ### Observations
 
