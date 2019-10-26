@@ -16,6 +16,19 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 960
+            }
+          }
+        ]
+      }
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'gatsby-starter-default',
@@ -31,9 +44,7 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-sass',
-    'gatsby-transformer-remark',
     'gatsby-plugin-eslint',
-    'gatsby-plugin-mdx',
     {
       resolve: 'gatsby-plugin-gtag',
       options: {
