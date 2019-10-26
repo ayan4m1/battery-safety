@@ -21,15 +21,21 @@ Ratings:
 | Continuous Discharge | 108.5A  |
 | -------------------- | ------- |
 | Capacity             | 1550mAh |
-| Nominal Voltage      | 12.6V   |
+| Nominal Voltage      | 11.1V   |
 | Charge               | 1-3C    |
 | Weight               | 165g    |
 
 Derived parameters:
 
-| Energy Capacity | 19.53Wh  |
+| Energy Capacity | 17.21Wh  |
 | --------------- | -------- |
-| Energy Density  | 426.1J/g |
+| Energy Density  | 375.4J/g |
+
+Observed parameters:
+
+| DC Internal Resistance | ~6m&ohm; |
+| ---------------------- | -------- |
+| Capacity               | ~1400mAh |
 
 ### Photos
 
