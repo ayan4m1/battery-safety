@@ -31,7 +31,7 @@ Balance connector: 5-pin JST-XH
 
 ### Photos
 
-From the manufacturer: ![battery](http://www.usastore.revolectrix.com/B420YS13004SXSUS-big.jpg)
+From the manufacturer: ![battery](../images/revolectrix-4s-1300-mfg.jpg)
 
 ### Test Results
 

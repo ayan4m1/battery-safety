@@ -36,7 +36,7 @@ Balance connector: 4-pin JST-XH
 
 ### Photos
 
-From the manufacturer: ![battery](http://www.store.revolectrix.com/B420-1550L.jpg)
+From the manufacturer: ![battery](../images/revolectrix-3s-1550-mfg.jpg)
 
 ### Test Results
 
