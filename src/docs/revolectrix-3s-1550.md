@@ -43,4 +43,8 @@ From the manufacturer: ![battery](http://www.store.revolectrix.com/B420-1550L.jp
 
 ### Test Results
 
+![test](https://i.imgur.com/1zx3OAr.png)
+
 ### Observations
+
+The packs tested heated to ~25&deg;C and swelled visibly after a minute at 10A constant discharge.
