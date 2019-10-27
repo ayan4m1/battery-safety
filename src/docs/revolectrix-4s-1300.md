@@ -29,10 +29,19 @@ Balance connector: 5-pin JST-XH
 | Energy Capacity    | 19.24Wh  |
 | Energy Density     | 446.9J/g |
 
+| Observed parameters    |          |
+| ---------------------- | -------- |
+| DC Internal Resistance | ~3m&ohm; |
+| Capacity               | ~1200mAh |
+
 ### Photos
 
 From the manufacturer: ![battery](../images/revolectrix-4s-1300-mfg.jpg)
 
 ### Test Results
+
+![Test Results](../images/tests/revolectrix-4s-1300.png)
+
+Test results yield an average of 1200mAh per pack. Accordingly, I assert that these packs are roughly 8% over-rated with respect to capcity.
 
 ### Observations

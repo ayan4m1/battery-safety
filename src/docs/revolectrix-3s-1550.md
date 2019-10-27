@@ -42,6 +42,8 @@ From the manufacturer: ![battery](../images/revolectrix-3s-1550-mfg.jpg)
 
 ![Test Results](../images/tests/revolectrix-3s-1550.png)
 
+Test results yield an average of 1400mAh per pack. Accordingly, I assert that these packs are roughly 10% over-rated with respect to capacity.
+
 ### Observations
 
 The packs tested heated to ~25&deg;C and swelled visibly after a minute at 10A constant discharge.
