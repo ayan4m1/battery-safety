@@ -16,23 +16,25 @@ Discharge connector: XT60
 
 Balance connector: 5-pin JST-XH
 
-| Rated parameters     |         |
-| -------------------- | ------- |
-| Continuous Discharge | 91A     |
-| Capacity             | 1300mAh |
-| Nominal Voltage      | 14.8V   |
-| Charge               | <2C     |
-| Weight               | 155g    |
+| Rated parameters     |                |
+| -------------------- | -------------- |
+| Dimensions           | 31 x 34 x 72mm |
+| Continuous Discharge | 91A            |
+| Capacity             | 1300mAh        |
+| Nominal Voltage      | 14.8V          |
+| Charge               | <2C            |
+| Weight               | 155g           |
 
 | Derived parameters |          |
 | ------------------ | -------- |
 | Energy Capacity    | 19.24Wh  |
 | Energy Density     | 446.9J/g |
 
-| Observed parameters    |          |
-| ---------------------- | -------- |
-| DC Internal Resistance | ~3m&ohm; |
-| Capacity               | ~1200mAh |
+| Observed parameters    |                |
+| ---------------------- | -------------- |
+| Dimensions             | 32 x 34 x 76mm |
+| DC Internal Resistance | ~3m&ohm;       |
+| Capacity               | ~1200mAh       |
 
 ### Photos
 
