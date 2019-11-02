@@ -23,6 +23,13 @@ const Header = () => (
         <Nav.Link as={Link} to="/donate">
           Donate
         </Nav.Link>
+        <Nav.Link
+          href="https://forms.gle/MkzmBG7Nukmd7ypg7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Survey
+        </Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>
