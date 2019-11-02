@@ -1,6 +1,6 @@
 ---
 path: '/tests/revolectrix-4s-1300'
-date: '2019-10-25'
+date: '2019-10-27'
 title: 'Revolectrix 4S 1300mAh'
 ---
 
