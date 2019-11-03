@@ -33,7 +33,7 @@ Balance connector: 5-pin JST-XH
 | Observed parameters    |                |
 | ---------------------- | -------------- |
 | Dimensions             | 32 x 34 x 76mm |
-| DC Internal Resistance | ~3m&ohm;       |
+| DC Internal Resistance | 3-8m&ohm;      |
 | Capacity               | ~1200mAh       |
 
 ### Photos
@@ -47,3 +47,5 @@ From the manufacturer: ![battery](../images/revolectrix-4s-1300-mfg.jpg)
 Test results yield an average of 1200mAh per pack. Accordingly, I assert that these packs are roughly 8% over-rated with respect to capcity.
 
 ### Observations
+
+These packs handle 10A continuous discharge well, no observed swelling and only a 4-5&deg;C temperature increase.
