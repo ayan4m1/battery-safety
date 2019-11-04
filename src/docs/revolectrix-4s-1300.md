@@ -42,10 +42,14 @@ From the manufacturer: ![battery](../images/revolectrix-4s-1300-mfg.jpg)
 
 ### Test Results
 
-![Test Results](../images/tests/revolectrix-4s-1300.png)
+Continuous discharge: ![Test Results](../images/tests/revolectrix-4s-1300-continuous.png)
 
-Test results yield an average of 1200mAh per pack. Accordingly, I assert that these packs are roughly 8% over-rated with respect to capcity.
+Vaping profiles: ![Test Results](../images/tests/revolectrix-4s-1300-profiles.png)
+
+Continuous discharge testing yield an average of 1200mAh per pack. Accordingly, I assert that these packs are roughly 8% over-rated with respect to capcity.
+
+At MTL wattages, these packs were able to deliver 1290mAh - within the margin of error for my testing setup. However, at 75/150W they were closer to 1150mAh.
 
 ### Observations
 
-These packs handle 10A continuous discharge well, no observed swelling and only a 4-5&deg;C temperature increase.
+These packs handle 10A continuous discharge well, no observed swelling and only a 4-5&deg;C temperature increase. Unfortunately, I will have to update this when I can test at >10A.
