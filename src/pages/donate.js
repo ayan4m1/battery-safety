@@ -41,9 +41,15 @@ const DonatePage = () => (
               <Card.Title id="money">Donate money for packs</Card.Title>
               <Card.Text>
                 You can donate funds towards my pack list by using the button
-                below. An online poll for most desired packs will exist as soon
-                as I have time to write it, but for now email andrew (at)
-                bulletlogic (dot) com.
+                below. Take this{' '}
+                <a
+                  href="https://forms.gle/MkzmBG7Nukmd7ypg7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  survey
+                </a>{' '}
+                to help me decide which packs to test.
                 <hr />
                 <form
                   action="https://www.paypal.com/cgi-bin/webscr"
@@ -97,12 +103,11 @@ const DonatePage = () => (
                   them
                 </li>
                 <li>
-                  If a pack was damaged, it is unlikely that I can safely return
-                  it to you and I will dispose of it responsibly
+                  Assuming the packs survived, I will ship them back to you
                 </li>
                 <li>
-                  If one or more packs were not damaged, print me an airbill
-                  with your favorite carrier and I will return them posthaste
+                  If a pack was damaged, it is unlikely that I can safely return
+                  it to you and I will dispose of it responsibly
                 </li>
               </ol>
             </Card.Body>
