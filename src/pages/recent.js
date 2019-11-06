@@ -27,7 +27,10 @@ const RecentTestsPage = ({ data }) => (
                 </Col>
                 <Col md={4} className="text-right">
                   <p className="text-muted">
-                    published on {node.frontmatter.date}
+                    Published on {node.frontmatter.date}
+                  </p>
+                  <p className="text-muted">
+                    Updated on {node.frontmatter.updated}
                   </p>
                 </Col>
               </Row>
@@ -46,13 +49,14 @@ RecentTestsPage.propTypes = {
 export const query = graphql`
   query RecentPostsQuery {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { order: DESC, fields: [frontmatter___updated] }
       limit: 10
     ) {
       edges {
         node {
           frontmatter {
-            date
+            date(formatString: "MMMM DD, YYYY")
+            updated(formatString: "MMMM DD, YYYY")
             path
             title
           }
