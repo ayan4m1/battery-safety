@@ -14,7 +14,7 @@ export default class Markdown extends Component {
   render() {
     const { data } = this.props;
     const {
-      frontmatter: { title },
+      frontmatter: { title, date, updated },
       html
     } = data.markdownRemark;
 
@@ -23,6 +23,13 @@ export default class Markdown extends Component {
         <SEO title={title} />
         <Container>
           <Row>
+            <Col xs="8">
+              <h2>{title}</h2>
+            </Col>
+            <Col xs="4" className="text-muted text-right">
+              <p>Published on {date}</p>
+              <p>Updated on {updated}</p>
+            </Col>
             <Col md="12" dangerouslySetInnerHTML={{ __html: html }} />
           </Row>
         </Container>
@@ -37,6 +44,7 @@ export const query = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
+        updated(formatString: "MMMM DD, YYYY")
         path
         title
       }

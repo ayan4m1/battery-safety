@@ -1,10 +1,9 @@
 ---
 path: '/tests/revolectrix-3s-1550'
 date: '2019-10-25'
+updated: '2019-11-06'
 title: 'Revolectrix 3S 1550mAh'
 ---
-
-# Revolectrix 3S 1550mAh
 
 ### Specifications
 

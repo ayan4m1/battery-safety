@@ -1,10 +1,9 @@
 ---
 path: '/tests/revolectrix-4s-1300'
 date: '2019-10-27'
+updated: '2019-11-06'
 title: 'Revolectrix 4S 1300mAh'
 ---
-
-# Revolectrix 4S 1300mAh
 
 ### Specifications
 
