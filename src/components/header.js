@@ -15,10 +15,10 @@ const Header = () => (
     <Navbar.Collapse>
       <Nav>
         <Nav.Link as={Link} to="/recent" activeLinkKey="/">
-          Recent Tests
+          Recent
         </Nav.Link>
         <Nav.Link as={Link} to="/all" activeLinkKey="/">
-          All Tests
+          All
         </Nav.Link>
         <Nav.Link as={Link} to="/donate">
           Donate
