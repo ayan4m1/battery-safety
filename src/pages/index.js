@@ -89,10 +89,7 @@ IndexPage.propTypes = {
 
 export const query = graphql`
   query MostRecentPostQuery {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 1000
-    ) {
+    allMarkdownRemark(limit: 1000) {
       edges {
         node {
           id
