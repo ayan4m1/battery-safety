@@ -49,4 +49,4 @@ Test results yield an average of 1400mAh per pack. Accordingly, I assert that th
 
 ### Observations
 
-The packs tested heated to ~25&deg;C and swelled visibly after a minute at 10A constant discharge.
+The packs tested heated to ~29&deg;C and swelled visibly after a minute at 10A constant discharge.
