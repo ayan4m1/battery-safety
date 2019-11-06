@@ -33,7 +33,7 @@ Balance connector: 4-pin JST-XH
 | Observed parameters    |                 |
 | ---------------------- | --------------- |
 | Dimensions             | 21 x 43 x 92 mm |
-| DC Internal Resistance | ~6m&ohm;        |
+| DC Internal Resistance | ~8m&ohm;        |
 | Capacity               | ~1400mAh        |
 
 ### Photos
@@ -42,7 +42,9 @@ From the manufacturer: ![battery](../images/revolectrix-3s-1550-mfg.jpg)
 
 ### Test Results
 
-![Test Results](../images/tests/revolectrix-3s-1550.png)
+Continuous discharge: ![Test Results](../images/tests/revolectrix-3s-1550-continuous.png)
+
+Vaping profiles: ![Test Results](../images/tests/revolectrix-3s-1550-profiles.png)
 
 Test results yield an average of 1400mAh per pack. Accordingly, I assert that these packs are roughly 10% over-rated with respect to capacity.
 
