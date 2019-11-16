@@ -9,8 +9,6 @@ title: 'Revolectrix 3S 1550mAh'
 
 Part number: `B420 YS1550-3S-XS`
 
-Dimensions: 20 x 45 x 90 mm
-
 Discharge connector: XT60
 
 Balance connector: 4-pin JST-XH

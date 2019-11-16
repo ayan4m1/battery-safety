@@ -9,8 +9,6 @@ title: 'Revolectrix 4S 1300mAh'
 
 Part number: `B420 YS1300-4S-XS-US`
 
-Dimensions: 31 x 34 x 72 mm
-
 Discharge connector: XT60
 
 Balance connector: 5-pin JST-XH
