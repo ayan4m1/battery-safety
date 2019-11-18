@@ -41,8 +41,6 @@ From the manufacturer: ![battery](../images/gforce-4s-1600-mfg.jpg)
 
 Continuous discharge: ![Test Results](../images/tests/gforce-4s-1600-continuous.png)
 
-Vaping profiles: ![Test Results](../images/tests/gforce-4s-1600-profiles.png)
-
 ### Observations
 
 The problem with this pack is its discharge leads. They are 16ga PVC jacketed wire. It would not be safe to draw more than ~20A from this pack even if it could deliver because the wire would be melting. Unless you are looking for a low-current purpose or are willing to open the pack up and re-wire it yourself, that alone should disqualify it from purchase.
