@@ -1,13 +1,13 @@
 ---
 path: '/tests/ovonic-3s-1550'
-date: '2019-11-16'
-updated: '2019-11-16'
+date: '2019-11-17'
+updated: '2019-11-17'
 title: 'Ovonic 3S 1550mAh'
 ---
 
 ### Specifications
 
-Part number: `B420 YS1550-3S-XS`
+Part number: ?
 
 Discharge connector: XT60
 
@@ -19,19 +19,19 @@ Balance connector: 4-pin JST-XH
 | Continuous Discharge | 77.5A          |
 | Capacity             | 1550mAh        |
 | Nominal Voltage      | 11.1V          |
-| Charge               | ?              |
-| Weight               | 128g           |
+| Charge               | 0.5-1C         |
+| Weight               | 114g           |
 
-| Derived parameters |      |
-| ------------------ | ---- |
-| Energy Capacity    | ?Wh  |
-| Energy Density     | ?J/g |
+| Derived parameters |          |
+| ------------------ | -------- |
+| Energy Capacity    | 17.2Wh   |
+| Energy Density     | 483.8J/g |
 
 | Observed parameters    |                 |
 | ---------------------- | --------------- |
 | Dimensions             | 35 x 23 x 71 mm |
-| DC Internal Resistance | ~8m&ohm;        |
-| Capacity               | ~1400mAh        |
+| DC Internal Resistance | 25m&ohm;        |
+| Capacity               | ~1450mAh        |
 
 ### Photos
 
@@ -43,6 +43,6 @@ Continuous discharge: ![Test Results](../images/tests/ovonic-3s-1550-continuous.
 
 Vaping profiles: ![Test Results](../images/tests/ovonic-3s-1550-profiles.png)
 
-Test results yield an average of 1400mAh per pack. Accordingly, I assert that these packs are roughly 10% over-rated with respect to capacity.
-
 ### Observations
+
+Both test packs I have are roughly 3 x 3 x 2 mm larger than stated, measured fresh out of the box. They averaged 1450mAh across the continuous discharge and vaping profile tests. Accordingly, I find that these packs are roughly 8% over-rated with respect to capacity. At higher discharge rates, the packs did heat up roughly 10&deg;C, but they stayed at safe temperatures up to 12A continuous discharge.
