@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { graphql, Link } from 'gatsby';
 import { Row, Col } from 'react-bootstrap';
 
-import SEO from '~components/seo';
-import Layout from '~components/layout';
+import SEO from '~components/SEO';
+import Layout from '~components/Layout';
 
 const IndexPage = ({ data }) => (
   <Layout>

@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import SEO from '~components/seo';
-import Layout from '~components/layout';
+import SEO from '~components/SEO';
+import Layout from '~components/Layout';
 
 export default class Markdown extends Component {
   static propTypes = {

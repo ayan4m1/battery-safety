@@ -3,9 +3,9 @@ import React, { Fragment } from 'react';
 import { Container } from 'react-bootstrap';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import './layout.scss';
+import './Layout.scss';
 
-import Header from './header';
+import Header from './Header';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

@@ -1,8 +1,8 @@
 import React from 'react';
-
-import SEO from '~components/seo';
-import Layout from '~components/layout';
 import { Container, Card, Row, Col } from 'react-bootstrap';
+
+import SEO from '~components/SEO';
+import Layout from '~components/Layout';
 
 const DonatePage = () => (
   <Layout>

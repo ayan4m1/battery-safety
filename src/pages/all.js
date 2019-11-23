@@ -1,12 +1,12 @@
 import React from 'react';
 import { Jumbotron } from 'react-bootstrap';
 
-import SEO from '~components/seo';
-import Layout from '~components/layout';
+import SEO from '~components/SEO';
+import Layout from '~components/Layout';
 
 const AllTestsPage = () => (
   <Layout>
-    <SEO title="AllTests Posts" />
+    <SEO title="All Tests" />
     <Jumbotron>
       <h1>All Tests</h1>
       <h2>Coming Soon</h2>
