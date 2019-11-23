@@ -3,6 +3,9 @@ path: '/tests/ovonic-3s-1550'
 date: '2019-11-17'
 updated: '2019-11-17'
 title: 'Ovonic 3S 1550mAh'
+brand: 'Ovonic'
+capacity: 1550
+cells: 3
 ---
 
 ### Specifications

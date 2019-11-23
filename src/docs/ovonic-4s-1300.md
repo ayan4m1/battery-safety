@@ -3,6 +3,9 @@ path: '/tests/ovonic-4s-1300'
 date: '2019-11-07'
 updated: '2019-11-07'
 title: 'Ovonic 4S 1300mAh'
+brand: 'Ovonic'
+capacity: 1300
+cells: 4
 ---
 
 ### Specifications

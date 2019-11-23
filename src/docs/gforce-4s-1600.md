@@ -3,6 +3,9 @@ path: '/tests/gforce-4s-1600'
 date: '2019-11-17'
 updated: '2019-11-17'
 title: 'Gforce 4S 1600mAh'
+brand: 'Gforce'
+capacity: 1600
+cells: 4
 ---
 
 ### Specifications
