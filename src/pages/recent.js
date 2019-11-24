@@ -22,7 +22,7 @@ const RecentTestsPage = ({ data }) => (
               <Row>
                 <Col md={8}>
                   <Link to={node.frontmatter.path}>
-                    <h2>{node.frontmatter.title}</h2>
+                    <h4>{node.frontmatter.title}</h4>
                   </Link>
                 </Col>
                 <Col md={4} className="text-right">
