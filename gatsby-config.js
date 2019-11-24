@@ -59,6 +59,7 @@ module.exports = {
         head: true,
         anonymize: true
       }
-    }
+    },
+    '@bumped-inc/gatsby-plugin-optional-chaining'
   ]
 };
