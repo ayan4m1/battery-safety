@@ -27,11 +27,13 @@ const RecentTestsPage = ({ data }) => (
                 </Col>
                 <Col md={4} className="text-right">
                   <p className="text-muted">
-                    Published on {node.frontmatter.date}
+                    Published {node.frontmatter.date}
                   </p>
-                  <p className="text-muted">
-                    Updated on {node.frontmatter.updated}
-                  </p>
+                  {node.frontmatter.date !== node.frontmatter.updated && (
+                    <p className="text-muted">
+                      Updated {node.frontmatter.updated}
+                    </p>
+                  )}
                 </Col>
               </Row>
             </Card.Body>
