@@ -1,7 +1,7 @@
 ---
 path: '/tests/gforce-4s-1600'
 date: '2019-11-17'
-updated: '2019-11-17'
+updated: '2019-12-02'
 title: 'Gforce 4S 1600mAh'
 brand: 'Gforce'
 capacity: 1600
@@ -43,6 +43,8 @@ From the manufacturer: ![battery](../images/gforce-4s-1600-mfg.jpg)
 ### Test Results
 
 Continuous discharge: ![Test Results](../images/tests/gforce-4s-1600-continuous.png)
+
+Vaping profiles: ![Test Results](../images/tests/gforce-4s-1600-profiles.png)
 
 ### Observations
 
