@@ -72,9 +72,10 @@ export default class AllTestsPage extends Component {
         return (
           (!selected?.name || title.toLowerCase().includes(selected.name)) &&
           (!selected?.brand || brand === selected.brand) &&
-          (selected?.capacity?.min <= capacity &&
-            selected?.capacity?.max >= capacity) &&
-          (selected?.cells?.min <= cells && selected?.cells?.max >= cells)
+          selected?.capacity?.min <= capacity &&
+          selected?.capacity?.max >= capacity &&
+          selected?.cells?.min <= cells &&
+          selected?.cells?.max >= cells
         );
       })
       .map(edge => edge.node.frontmatter);
