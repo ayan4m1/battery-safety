@@ -133,10 +133,10 @@ export default class AllTestsPage extends Component {
         <Table striped bordered hover>
           <thead>
             <tr>
-              <td>Brand</td>
-              <td>Capacity (mAh)</td>
-              <td>Cells (series)</td>
-              <td>Test</td>
+              <th>Brand</th>
+              <th>Capacity (mAh)</th>
+              <th>Cells (series)</th>
+              <th>Test</th>
             </tr>
           </thead>
           <tbody>
