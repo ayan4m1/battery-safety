@@ -137,7 +137,7 @@ export default class Search extends Component {
                 onChange={this.handleChange}
               >
                 <option value="">All brands</option>
-                {brands.map(brand => (
+                {brands.map((brand) => (
                   <option key={brand.id} value={brand.id}>
                     {brand.text}
                   </option>
@@ -153,7 +153,9 @@ export default class Search extends Component {
                 max={defaultValues.capacity.max}
                 min={defaultValues.capacity.min}
                 name="capacity"
-                onChange={values => this.handleSliderChange('capacity', values)}
+                onChange={(values) =>
+                  this.handleSliderChange('capacity', values)
+                }
                 step={250}
                 value={[capacityMin, capacityMax]}
               />
@@ -167,7 +169,7 @@ export default class Search extends Component {
                 max={defaultValues.cells.max}
                 min={defaultValues.cells.min}
                 name="cells"
-                onChange={values => this.handleSliderChange('cells', values)}
+                onChange={(values) => this.handleSliderChange('cells', values)}
                 value={[cellsMin, cellsMax]}
               />
             </Form.Group>

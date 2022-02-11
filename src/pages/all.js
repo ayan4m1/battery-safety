@@ -66,7 +66,7 @@ export default class AllTestsPage extends Component {
     const { data } = this.props;
     const { selected } = this.state;
     const results = data.allMarkdownRemark.edges
-      .filter(edge => {
+      .filter((edge) => {
         const { title, brand, capacity, cells } = edge.node.frontmatter;
 
         return (
@@ -78,7 +78,7 @@ export default class AllTestsPage extends Component {
           selected?.cells?.max >= cells
         );
       })
-      .map(edge => edge.node.frontmatter);
+      .map((edge) => edge.node.frontmatter);
 
     this.setState({ results });
   }
@@ -141,7 +141,7 @@ export default class AllTestsPage extends Component {
             </tr>
           </thead>
           <tbody>
-            {results.map(result => (
+            {results.map((result) => (
               <tr key={result.path}>
                 <td>{result.brand}</td>
                 <td>{result.capacity} mAh</td>
