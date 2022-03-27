@@ -147,6 +147,7 @@ export default class Search extends Component {
             <Form.Group as={Col} md={6}>
               <Form.Label>Capacity (mAh)</Form.Label>
               <Form.Control
+                className="my-2"
                 allowCross={false}
                 as={Range}
                 marks={this.capacityMarks}
@@ -163,6 +164,7 @@ export default class Search extends Component {
             <Form.Group as={Col} md={6}>
               <Form.Label>Cells (series)</Form.Label>
               <Form.Control
+                className="my-2"
                 allowCross={false}
                 as={Range}
                 marks={this.cellsMarks}
