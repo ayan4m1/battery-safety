@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => (
       <Col md={8}>
         <h1>Vapor Wilco LiPo Testing</h1>
       </Col>
-      <Col md={4} className="text-right">
+      <Col md={4} className="text-end">
         <h2 className="text-muted">
           {data.allMarkdownRemark.edges.length} tests total
         </h2>

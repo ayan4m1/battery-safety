@@ -26,7 +26,7 @@ export default class Markdown extends Component {
             <Col xs="8">
               <h2>{title}</h2>
             </Col>
-            <Col xs="4" className="text-muted text-right">
+            <Col xs="4" className="text-muted text-end">
               <p>Published on {date}</p>
               <p>Updated on {updated}</p>
             </Col>

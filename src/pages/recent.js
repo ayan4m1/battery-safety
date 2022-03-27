@@ -25,7 +25,7 @@ const RecentTestsPage = ({ data }) => (
                     <h4>{node.frontmatter.title}</h4>
                   </Link>
                 </Col>
-                <Col md={4} className="text-right">
+                <Col md={4} className="text-end">
                   <p className="text-muted">
                     Published {node.frontmatter.date}
                   </p>

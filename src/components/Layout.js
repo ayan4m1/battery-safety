@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <Container>
         <main>{children}</main>
-        <footer className="text-right mt-4">
+        <footer className="text-end mt-4">
           &copy; {new Date().getFullYear()} Vapor Wilco LLC
         </footer>
       </Container>
