@@ -1,3 +1,5 @@
+require('dotenv/config');
+
 module.exports = {
   siteMetadata: {
     title: 'LiPo Safety',
@@ -55,7 +57,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-gtag',
       options: {
-        trackingId: 'UA-138430995-2',
+        trackingId: process.env.GA_TRACKING_ID,
         head: true,
         anonymize: true
       }
