@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import debounce from 'lodash.debounce';
 import { graphql, Link } from 'gatsby';
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Table, Card } from 'react-bootstrap';
 
 import SEO from '~components/SEO';

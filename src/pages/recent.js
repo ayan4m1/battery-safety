@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql, Link } from 'gatsby';
 import { Row, Col, Card } from 'react-bootstrap';
@@ -6,44 +5,46 @@ import { Row, Col, Card } from 'react-bootstrap';
 import SEO from '~components/SEO';
 import Layout from '~components/Layout';
 
-const RecentTestsPage = ({ data }) => (
-  <Layout>
-    <SEO title="Recent Posts" />
-    <Row>
-      <Col md={8}>
-        <h1>Most Recent Tests</h1>
-      </Col>
-    </Row>
-    <Row>
-      <Col>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Card key={node.frontmatter.path} className="my-2">
-            <Card.Body>
-              <Row>
-                <Col md={8}>
-                  <Link to={node.frontmatter.path}>
-                    <h4>{node.frontmatter.title}</h4>
-                  </Link>
-                </Col>
-                <Col md={4} className="text-end">
-                  <p className="text-muted">
-                    Published {node.frontmatter.date}
-                  </p>
-                  {node.frontmatter.updated &&
-                    node.frontmatter.date !== node.frontmatter.updated && (
-                      <p className="text-muted">
-                        Updated {node.frontmatter.updated}
-                      </p>
-                    )}
-                </Col>
-              </Row>
-            </Card.Body>
-          </Card>
-        ))}
-      </Col>
-    </Row>
-  </Layout>
-);
+export default function RecentTestsPage({ data }) {
+  return (
+    <Layout>
+      <SEO title="Recent Posts" />
+      <Row>
+        <Col md={8}>
+          <h1>Most Recent Tests</h1>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <Card key={node.frontmatter.path} className="my-2">
+              <Card.Body>
+                <Row>
+                  <Col md={8}>
+                    <Link to={node.frontmatter.path}>
+                      <h4>{node.frontmatter.title}</h4>
+                    </Link>
+                  </Col>
+                  <Col md={4} className="text-end">
+                    <p className="text-muted">
+                      Published {node.frontmatter.date}
+                    </p>
+                    {node.frontmatter.updated &&
+                      node.frontmatter.date !== node.frontmatter.updated && (
+                        <p className="text-muted">
+                          Updated {node.frontmatter.updated}
+                        </p>
+                      )}
+                  </Col>
+                </Row>
+              </Card.Body>
+            </Card>
+          ))}
+        </Col>
+      </Row>
+    </Layout>
+  );
+}
 
 RecentTestsPage.propTypes = {
   data: PropTypes.object.isRequired
@@ -51,10 +52,7 @@ RecentTestsPage.propTypes = {
 
 export const query = graphql`
   query RecentPostsQuery {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___updated] }
-      limit: 10
-    ) {
+    allMarkdownRemark(sort: { frontmatter: { updated: DESC } }, limit: 10) {
       edges {
         node {
           frontmatter {
@@ -68,5 +66,3 @@ export const query = graphql`
     }
   }
 `;
-
-export default RecentTestsPage;

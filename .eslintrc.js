@@ -163,7 +163,9 @@ module.exports = {
     'no-console': 2,
     'no-debugger': 2,
     'prettier/prettier': 2,
-    'jsx-a11y/label-has-for': 0
+    'jsx-a11y/label-has-for': 0,
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off'
   },
   settings: {
     react: {

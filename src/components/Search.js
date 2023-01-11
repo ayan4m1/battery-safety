@@ -1,6 +1,6 @@
 import { Range } from 'rc-slider';
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Container, Row, Col, Form } from 'react-bootstrap';
 
 import 'rc-slider/assets/index.css';

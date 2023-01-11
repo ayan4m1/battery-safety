@@ -1,46 +1,42 @@
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import SEO from '~components/SEO';
 import Layout from '~components/Layout';
 
-export default class Markdown extends Component {
-  static propTypes = {
-    data: PropTypes.object.isRequired
-  };
+export default function Markdown({ data }) {
+  const {
+    frontmatter: { title, date, updated },
+    html
+  } = data.markdownRemark;
 
-  render() {
-    const { data } = this.props;
-    const {
-      frontmatter: { title, date, updated },
-      html
-    } = data.markdownRemark;
-
-    return (
-      <Layout>
-        <SEO title={title} />
-        <Container>
-          <Row>
-            <Col xs="8">
-              <h2>{title}</h2>
-            </Col>
-            <Col xs="4" className="text-muted text-end">
-              <p>Published on {date}</p>
-              <p>Updated on {updated}</p>
-            </Col>
-            <Col md="12" dangerouslySetInnerHTML={{ __html: html }} />
-          </Row>
-        </Container>
-      </Layout>
-    );
-  }
+  return (
+    <Layout>
+      <SEO title={title} />
+      <Container>
+        <Row>
+          <Col xs="8">
+            <h2>{title}</h2>
+          </Col>
+          <Col xs="4" className="text-muted text-end">
+            <p>Published on {date}</p>
+            <p>Updated on {updated}</p>
+          </Col>
+          <Col md="12" dangerouslySetInnerHTML={{ __html: html }} />
+        </Row>
+      </Container>
+    </Layout>
+  );
 }
 
+Markdown.propTypes = {
+  data: PropTypes.object
+};
+
 export const query = graphql`
-  query ($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query ($pagePath: String!) {
+    markdownRemark(frontmatter: { path: { eq: $pagePath } }) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
