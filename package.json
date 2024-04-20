@@ -9,11 +9,11 @@
     "bootstrap": "^5.3.3",
     "bootswatch": "^5.3.3",
     "dotenv": "^16.4.5",
-    "gatsby": "^5.13.3",
+    "gatsby": "^5.13.4",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-gtag": "^1.0.13",
     "gatsby-plugin-manifest": "^5.13.1",
-    "gatsby-plugin-offline": "^6.13.1",
+    "gatsby-plugin-offline": "^6.13.2",
     "gatsby-plugin-react-helmet": "^6.13.1",
     "gatsby-plugin-sass": "^6.13.1",
     "gatsby-plugin-sharp": "^5.13.1",
@@ -30,7 +30,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.3",
+    "@babel/core": "^7.24.4",
     "@babel/eslint-parser": "^7.24.1",
     "@babel/plugin-proposal-optional-chaining": "^7.21.0",
     "eslint": "^8.57.0",
@@ -44,7 +44,7 @@
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
-    "stylelint": "^16.3.0",
+    "stylelint": "^16.3.1",
     "stylelint-config-recommended": "^14.0.0"
   },
   "keywords": [
