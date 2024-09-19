@@ -1,32 +1,32 @@
 import { Link } from 'gatsby';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
-import vwLogo from '~images/logo.svg';
+import vwLogo from 'images/logo.svg';
 
 const Header = () => (
   <Navbar>
     <Container>
       <Navbar.Brand>
         <Link to="/">
-          <img src={vwLogo} alt="Vapor Wilco" />
+          <img alt="Vapor Wilco" src={vwLogo} />
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>
         <Nav>
-          <Nav.Link as={Link} to="/recent" activeLinkKey="/">
+          <Nav.Link activeLinkKey="/recent" as={Link} to="/recent">
             Recent
           </Nav.Link>
-          <Nav.Link as={Link} to="/all" activeLinkKey="/">
+          <Nav.Link activeLinkKey="/all" as={Link} to="/all">
             All
           </Nav.Link>
-          <Nav.Link as={Link} to="/donate">
+          <Nav.Link activeLinkKey="/donate" as={Link} to="/donate">
             Donate
           </Nav.Link>
           <Nav.Link
             href="https://forms.gle/MkzmBG7Nukmd7ypg7"
-            target="_blank"
             rel="noopener noreferrer"
+            target="_blank"
           >
             Survey
           </Nav.Link>

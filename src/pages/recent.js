@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import { graphql, Link } from 'gatsby';
 import { Row, Col, Card } from 'react-bootstrap';
 
-import SEO from '~components/SEO';
-import Layout from '~components/Layout';
+import SEO from 'components/SEO';
+import Layout from 'components/Layout';
 
 export default function RecentTestsPage({ data }) {
   return (
@@ -17,7 +17,7 @@ export default function RecentTestsPage({ data }) {
       <Row>
         <Col>
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Card key={node.frontmatter.path} className="my-2">
+            <Card className="my-2" key={node.frontmatter.path}>
               <Card.Body>
                 <Row>
                   <Col md={8}>
@@ -25,7 +25,7 @@ export default function RecentTestsPage({ data }) {
                       <h4>{node.frontmatter.title}</h4>
                     </Link>
                   </Col>
-                  <Col md={4} className="text-end">
+                  <Col className="text-end" md={4}>
                     <p className="text-muted">
                       Published {node.frontmatter.date}
                     </p>

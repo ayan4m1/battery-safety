@@ -1,7 +1,7 @@
 import { Container, Card, Row, Col } from 'react-bootstrap';
 
-import SEO from '~components/SEO';
-import Layout from '~components/Layout';
+import SEO from 'components/SEO';
+import Layout from 'components/Layout';
 
 export default function DonatePage() {
   return (
@@ -44,8 +44,8 @@ export default function DonatePage() {
                   below. Take this{' '}
                   <a
                     href="https://forms.gle/MkzmBG7Nukmd7ypg7"
-                    target="_blank"
                     rel="noopener noreferrer"
+                    target="_blank"
                   >
                     survey
                   </a>{' '}
@@ -56,26 +56,26 @@ export default function DonatePage() {
                     method="post"
                     target="_top"
                   >
-                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input name="cmd" type="hidden" value="_s-xclick" />
                     <input
-                      type="hidden"
                       name="hosted_button_id"
+                      type="hidden"
                       value="6FMCGYDLWKTZA"
                     />
                     <input
-                      type="image"
-                      src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+                      alt="Donate with PayPal button"
                       border="0"
                       name="submit"
+                      src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
                       title="PayPal - The safer, easier way to pay online!"
-                      alt="Donate with PayPal button"
+                      type="image"
                     />
                     <img
                       alt=""
                       border="0"
+                      height="1"
                       src="https://www.paypal.com/en_US/i/scr/pixel.gif"
                       width="1"
-                      height="1"
                     />
                   </form>
                 </Card.Text>

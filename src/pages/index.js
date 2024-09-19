@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import { graphql, Link } from 'gatsby';
 import { Row, Col } from 'react-bootstrap';
 
-import SEO from '~components/SEO';
-import Layout from '~components/Layout';
+import SEO from 'components/SEO';
+import Layout from 'components/Layout';
 
 export default function IndexPage({ data }) {
   return (
@@ -13,7 +13,7 @@ export default function IndexPage({ data }) {
         <Col md={8}>
           <h1>Vapor Wilco LiPo Testing</h1>
         </Col>
-        <Col md={4} className="text-end">
+        <Col className="text-end" md={4}>
           <h2 className="text-muted">
             {data.allMarkdownRemark.edges.length} tests total
           </h2>
@@ -30,8 +30,8 @@ export default function IndexPage({ data }) {
             My testing rig is a West Mountain Radio{' '}
             <a
               href="http://www.westmountainradio.com/product_info.php?products_id=cba4"
-              target="_blank"
               rel="noopener noreferrer"
+              target="_blank"
             >
               CBA IV Pro
             </a>
@@ -42,8 +42,8 @@ export default function IndexPage({ data }) {
             For 4S packs, this means a limit of ~10A. I am saving up for an{' '}
             <a
               href="http://www.westmountainradio.com/product_info.php?products_id=cbaamp"
-              target="_blank"
               rel="noopener noreferrer"
+              target="_blank"
             >
               amplifier
             </a>
@@ -60,8 +60,8 @@ export default function IndexPage({ data }) {
             <Link to="/donate">donate</Link> page or take the{' '}
             <a
               href="https://forms.gle/MkzmBG7Nukmd7ypg7"
-              target="_blank"
               rel="noopener noreferrer"
+              target="_blank"
             >
               LiPo battery survey
             </a>
@@ -74,7 +74,7 @@ export default function IndexPage({ data }) {
         </Col>
       </Row>
       <Row>
-        <Col xs className="text-center">
+        <Col className="text-center" xs>
           <Link to="/recent">
             <h3>View the recent tests here</h3>
           </Link>

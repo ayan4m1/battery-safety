@@ -56,7 +56,6 @@ export default class Search extends Component {
       target: { name, value }
     } = event;
 
-    // eslint-disable-next-line default-case
     switch (name) {
       case 'name':
         this.props.onNameChange(value);
@@ -68,7 +67,6 @@ export default class Search extends Component {
   }
 
   handleSliderChange(name, values) {
-    // eslint-disable-next-line default-case
     switch (name) {
       case 'capacity':
         this.props.onCapacityChange(values);
@@ -120,10 +118,10 @@ export default class Search extends Component {
               <Form.Label>Name</Form.Label>
               <Form.Control
                 name="name"
-                type="input"
-                value={selectedName}
                 onChange={this.handleChange}
                 placeholder="Superpower 4S 1500mAh"
+                type="input"
+                value={selectedName}
               />
             </Form.Group>
           </Row>
@@ -133,8 +131,8 @@ export default class Search extends Component {
               <Form.Control
                 as="select"
                 name="brand"
-                value={selectedBrand}
                 onChange={this.handleChange}
+                value={selectedBrand}
               >
                 <option value="">All brands</option>
                 {brands.map((brand) => (
@@ -147,9 +145,9 @@ export default class Search extends Component {
             <Form.Group as={Col} md={6}>
               <Form.Label>Capacity (mAh)</Form.Label>
               <Form.Control
-                className="my-2"
                 allowCross={false}
                 as={Range}
+                className="my-2"
                 marks={this.capacityMarks}
                 max={defaultValues.capacity.max}
                 min={defaultValues.capacity.min}
@@ -164,9 +162,9 @@ export default class Search extends Component {
             <Form.Group as={Col} md={6}>
               <Form.Label>Cells (series)</Form.Label>
               <Form.Control
-                className="my-2"
                 allowCross={false}
                 as={Range}
+                className="my-2"
                 marks={this.cellsMarks}
                 max={defaultValues.cells.max}
                 min={defaultValues.cells.min}

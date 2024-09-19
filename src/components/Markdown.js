@@ -2,8 +2,8 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import SEO from '~components/SEO';
-import Layout from '~components/Layout';
+import SEO from 'components/SEO';
+import Layout from 'components/Layout';
 
 export default function Markdown({ data }) {
   const {
@@ -19,11 +19,11 @@ export default function Markdown({ data }) {
           <Col xs="8">
             <h2>{title}</h2>
           </Col>
-          <Col xs="4" className="text-muted text-end">
+          <Col className="text-muted text-end" xs="4">
             <p>Published on {date}</p>
             <p>Updated on {updated}</p>
           </Col>
-          <Col md="12" dangerouslySetInnerHTML={{ __html: html }} />
+          <Col dangerouslySetInnerHTML={{ __html: html }} md="12" />
         </Row>
       </Container>
     </Layout>

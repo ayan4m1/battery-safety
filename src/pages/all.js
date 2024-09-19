@@ -4,9 +4,9 @@ import { graphql, Link } from 'gatsby';
 import { Component } from 'react';
 import { Table, Card } from 'react-bootstrap';
 
-import SEO from '~components/SEO';
-import Layout from '~components/Layout';
-import Search, { defaultValues } from '~components/Search';
+import SEO from 'components/SEO';
+import Layout from 'components/Layout';
+import Search, { defaultValues } from 'components/Search';
 
 const debounceLeading = (fn, delay = 250) =>
   debounce(fn, delay, { leading: true });
@@ -131,7 +131,7 @@ export default class AllTestsPage extends Component {
             selected={this.state.selected}
           />
         </Card>
-        <Table striped bordered hover>
+        <Table bordered hover striped>
           <thead>
             <tr>
               <th>Brand</th>
