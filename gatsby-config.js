@@ -57,7 +57,14 @@ module.exports = {
       }
     },
     'gatsby-plugin-offline',
-    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        sassOptions: {
+          quietDeps: true
+        }
+      }
+    },
     {
       resolve: 'gatsby-plugin-gtag',
       options: {
