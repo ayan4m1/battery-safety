@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -53,6 +53,8 @@ jobs:
             echo "Unable to determine packager manager"
             exit 1
           fi
+      - name: Setup Yarn
+        run: corepack enable
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -83,7 +85,7 @@ jobs:
           GA_TRACKING_ID: ${{ vars.GA_TRACKING_ID }}
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
 
