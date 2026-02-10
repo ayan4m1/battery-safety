@@ -13040,7 +13040,6 @@ __metadata:
     globals: "npm:^17.3.0"
     husky: "npm:^9.1.7"
     lint-staged: "npm:^16.2.7"
-    lmdb: "npm:^3.5.1"
     lodash.debounce: "npm:^4.0.8"
     prettier: "npm:^3.8.1"
     prop-types: "npm:^15.8.1"
@@ -13069,7 +13068,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lmdb@npm:3.5.1, lmdb@npm:^3.5.1":
+"lmdb@npm:3.5.1":
   version: 3.5.1
   resolution: "lmdb@npm:3.5.1"
   dependencies:
